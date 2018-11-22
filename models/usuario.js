@@ -25,7 +25,8 @@ var usuarioSchema = new Schema({
     img: { type: String, required: false },
     // default: 'USER_ROLE' Valor por defecto
     // enum: rolesValidos para poder ejecutar la comprovacion.
-    role: { type: String, required: true, default: 'USER_ROLE', enum: rolesValidos}
+    role: { type: String, required: true, default: 'USER_ROLE', enum: rolesValidos},
+    google:  { type: Boolean, default: false }
 })
 
 // utilizo el validador y le agrego el mensaje en caso de que salte
